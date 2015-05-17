@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  window.addEventListener('WebComponentsReady', function() {
+    supersonic.app.splashscreen.hide();
+  });
+  </script>
+  <!-- Cloud resource definition file for Supersonic Data -->
+  <script src="/cloud-resources.js"></script>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>case-study1</title>
+
+  <link rel="stylesheet" href="/components/supersonic/css/supersonic.css" />
+  <link rel="stylesheet" href="/app/common/stylesheets/application.css" />
+  <link rel="import" href="/components/supersonic/components/import.html">
+
+  <script src="http://localhost/cordova.js"></script>
+  <script src="/components/steroids-js/steroids.js"></script>
+  <script src="/components/angular/angular.js"></script>
+  <script src="/components/supersonic/supersonic.js"></script>
+  <script src="/components/webcomponentsjs/webcomponents.js"></script>
+
+  
+  <script src="/app/common.js"></script>
+  
+  <script src="/app/example.js"></script>
+  
+</head>
+<body ng-app="example">
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+  window.addEventListener('WebComponentsReady', function() {
+    supersonic.app.splashscreen.hide();
+  });
+  </script>
+  <!-- Cloud resource definition file for Supersonic Data -->
+  <script src="/cloud-resources.js"></script>
+	<p class="question">1. What is the answer to this question?</p>
+	<ul class="answers">
+		<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label><br/>
+		<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Answer 2</label><br/>
+		<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Answer 3</label><br/>
+		<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Answer 4</label><br/>
+	</ul>
+</head>
+
+<button class="button button-small button-assertive">
+  Submit
+</button>
+
+
+<div ng-controller="case-study1Controller">
+    <ng-form name="myForm">
+  <span ng-repeat="choice in choices">
+    <label class="checkbox" for="{{choice.id}}">
+      <input type="checkbox" required="required" value="{{choice.id}}" ng-click="updateQuestionValue(choice)" ng-model="choice.checked" name="group-one" id="{{choice.id}}" />
+{{choice.label}}
+    </label>
+  </span>
+  <input type="submit" value="Send" ng-click="submitSurvey(survey)" ng-disabled="value.length==0" />
+    </ng-form>
+</div>
+
+
+
+<script type="text/javascript">
+
+
+
+</script>
+
+
+
+
+
+</html>
+
+
+
+</body>
+</html>
