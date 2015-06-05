@@ -10,9 +10,19 @@
         	}
 	#logIn {
 		position:absolute;
-		top:80%;
+		top:60%;
 	    
 	}    	
+    #SignUp {
+    position:absolute;
+    top:70%;
+      
+  }  
+    #Skip {
+    position:absolute;
+    top:80%;
+      
+  }  
   </style>
  </head>
 <body>
@@ -28,7 +38,9 @@ steroids.view.setBackgroundImage({
 });
 </script>
  <div >
-  <button id="logIn" onclick="supersonic.ui.initialView.dismiss()" class="button button-block button-royal">Tap to Begin</button>
+  <button id="logIn" onclick="window.location.href='login.html'" class="button button-block button-royal">Log In</button>
+  <button id="SignUp" onclick="window.location.href='signup.html'" class="button button-block button-royal">Sign Up</button>
+  <button id="Skip" onclick="supersonic.ui.initialView.dismiss()" class="button button-block button-royal">Skip</button>
  </div>
 </body>
 </html>

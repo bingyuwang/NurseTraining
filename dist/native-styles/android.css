@@ -60,13 +60,15 @@ tab-bar tab-bar-item marker-top:selected {
   background-color: #1596f7;
 }
 
-tab-bar-item#training {
-  background-image: url(icons/training.svg);
-}
 
 tab-bar-item#index {
-  background-image: url(icons/home.svg);
+  background-image: url(icons/box.svg);
 }
+
+tab-bar-item#training {
+  background-image: url(icons/tab2.svg);
+}
+
 tab-bar-item#internet {
-  background-image: url(icons/gameIcon.svg);
+  background-image: url(icons/tab3.svg);
 }

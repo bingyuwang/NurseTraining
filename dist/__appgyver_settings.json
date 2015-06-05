@@ -33,14 +33,14 @@
     {
       "position": 1,
       "id": "training",
-      "title": "Training",
-      "target_url": "http://localhost/app/example/training.html"
+      "title": "Case Studies",
+      "target_url": "http://localhost/app/example/cases.html"
     },
     {
       "position": 2,
       "id": "internet",
       "title": "Game",
-      "target_url": "http://google.com"
+      "target_url": "http://localhost/app/example/Game.html"
     }
   ]
 }
